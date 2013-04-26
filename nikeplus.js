@@ -17,7 +17,6 @@ function fetchNikePlus() {
         body += chunk;
       });
       res.on('end', function() {
-        console.log(body);
         body = JSON.parse(body);
         var activities = body.data;
         if (activities && activities.length) {
@@ -30,6 +29,8 @@ function fetchNikePlus() {
           });
         }
       });
+    } else {
+      console.log('nikeplus status code: ' + res.statusCode);
     }
   }).on('error', function(err) {
     console.log('Error reading from nikeplus: ', err);
