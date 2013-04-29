@@ -6,7 +6,7 @@ Ported from [@danillotuhumury's work](https://github.com/danillotuhumury/nikeplu
 ## Installation
 
 ```shell
-$ dashing-js install GIST_ID
+$ dashing-js install https://github.com/fabiocaseri/nikeplus-dashing-js-widget/archive/master.zip
 ```
 
 ## Usage
@@ -16,9 +16,9 @@ To actually use the widget on your own Dashboard, you'll have to [request](https
 To include the widget on your dashboard, add the following snippet to the dashboard layout file:
 
 ```html
-<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-  <div data-id="nikeplus" data-view="Nikeplus"></div>
-</li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="nikeplus" data-view="Nikeplus"></div>
+    </li>
 ```
 
 On to the next part, rename the file `jobs/nikeplus_access_token.js.sample` in `jobs/nikeplus_access_token.js` and enter the Access Token:
